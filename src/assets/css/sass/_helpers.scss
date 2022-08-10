@@ -1,0 +1,86 @@
+.video-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 299.31px;//fallback ie
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
+    //html video-wrapper must have: style="--aspect-ratio: 3 / 4;"
+
+    iframe, video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+sup {
+    font-size: 70%;
+    position: relative;
+    top: -.4rem;
+}
+
+sub {
+    font-size: 30%;
+    position: relative;
+}
+
+small {
+    font-size: 80%;
+}
+
+// .intel-clear-pro {
+//     font-family: $fuente-secundaria;
+//     font-weight: 700;
+//     text-transform: uppercase;
+// }
+
+// .text-lowercase {
+//     font-family: $fuente-principal;
+//     text-transform: lowercase!important;
+// }
+
+
+.padding-container {
+    padding-left: $paddingSize;
+    padding-right: $paddingSize;
+    @media (min-width: $sm) {
+        padding-left: $paddingSizeSM;
+        padding-right: $paddingSizeSM;
+    }
+    @media (min-width: $md) {
+        padding-left: $paddingSizeMD;
+        padding-right: $paddingSizeMD;
+    }
+    @media (min-width: $lg) {
+        padding-left: $paddingSizeLG;
+        padding-right: $paddingSizeLG;
+    }
+}
+
+.transition-all {
+    transition: all $transitionSpeed;
+}
+
+.link-btn-default {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &:active {
+        border: none;
+        outline: none;
+    }
+}
+
+.opacity-hover {
+    @extend .transition-all;
+    &:hover {
+        opacity: .7;
+    }
+}

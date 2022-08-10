@@ -1,0 +1,31 @@
+ //slide down flecha header
+ .animate {
+	position: relative;
+	z-index: 1;
+
+	&.on {
+		opacity: 0;
+	}
+}
+
+.animate.slide-down.in-view {
+   animation-name: slide-down;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+   from {opacity: 0;transform:translateY(-10%);}
+   to {opacity: 1;transform:translateY(0);}
+}
+
+.animate.slide-up.in-view {
+   animation-name: slide-up;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+   from {opacity: 0;transform:translateY(10%);}
+   to {opacity: 1;transform:translateY(0);}
+}

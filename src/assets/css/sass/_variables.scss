@@ -1,0 +1,35 @@
+//TIPOGRAFIA
+$fuente-principal: 'IntelOne Display', sans-serif;//se usa regular
+//$fuente-secundaria: 'Intel Clear', sans-serif;
+//$fuente-tercera: 'Intel Clear Pro', $fuente-principal;//se usa regular
+$fontSizeBase: 16px;
+$lineHeightBase:18px;
+
+//COLORES
+$color-blanco: #fff;
+$color-negro: #333;
+
+//TIEMPO transition
+$transitionSpeed: 500ms;
+
+//GRID OPTIONS
+$mobileMin: 320px;
+$mobileMax: 414px;
+$xs: 568px; //<576px
+$sm: 768px; //<768px
+$sm2: 850px;
+$md: 992px;
+$md2: 1130px;
+$lg: 1200px; //<1200px
+$desktopMax: 1366px;
+$xlg: 1500px;
+$xlg2: 1780px;
+$fullHD: 1920px;
+
+
+//padding externos contentedores
+$paddingSize: 35px;
+$paddingSizeSM: 43px;
+$paddingSizeMD: 60px;
+$paddingSizeLG: 60px;
+$paddingSizeXLG: 60px;

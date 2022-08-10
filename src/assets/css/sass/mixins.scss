@@ -1,0 +1,52 @@
+@mixin image-2x($image, $size) {
+    @media (min--moz-device-pixel-ratio: 1.3),
+           (-o-min-device-pixel-ratio: 2.6/2),
+           (-webkit-min-device-pixel-ratio: 1.3),
+           (min-device-pixel-ratio: 1.3),
+           (min-resolution: 1.3dppx) {
+      /* on retina, use image that's scaled by 2 */
+      background-image: url($image);
+      background-size: $size;
+    }
+}
+
+@mixin image-3x($image, $size) {
+    @media (min--moz-device-pixel-ratio: 2.25),
+           (-webkit-min-device-pixel-ratio: 2.25),
+           (min-device-pixel-ratio: 2.25),
+           (min-resolution: 2.25dppx) {
+      /* on retina, use image that's scaled by 2 */
+      background-image: url($image);
+      background-size: $size;
+    }
+}
+
+@mixin padding-top-bottom($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+//calcula rem
+@function calculateRem($size) {
+    @if $size!=0 {
+        $remSize: $size / $fontSizeBase;
+        @return $remSize * 1rem;
+    } @else {
+        @return 0;
+    }
+}
+
+// Pasa font size, altura y letter space y lo pasa a rem
+@mixin font-size($size, $height, $letter) {
+	//font-size: calculateRem($size);
+	//line-height: calculateRem($height);
+	//letter-spacing: calculateRem($letter);
+	font-size: $size;
+	line-height: $height;
+	letter-spacing: $letter;
+}
+
+// Opacidad
+@function get-opacity($color, $amount) {
+	@return rgba($color, $amount);
+}

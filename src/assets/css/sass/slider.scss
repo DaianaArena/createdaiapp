@@ -1,0 +1,168 @@
+#productos {
+  .carousel-on {
+      position: relative;
+  }
+  .productos-on {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+  .item-on {
+    margin-left: auto;
+    margin-right: auto;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      opacity: 0;
+      transition: transform 200ms, opacity 200ms;
+
+      &.active-1 {
+          transform: translateX(-100%);
+          opacity: 0;
+          pointer-events: none;
+      }
+
+      &.active {
+          transform: translateX(0);
+          opacity: 1;
+          pointer-events: all;
+      }
+
+      &.active1 {
+          transform: translateX(100%);
+          opacity: 0;
+          pointer-events: none;
+          @media (min-width: $sm) {
+              pointer-events: all;
+              transform: translateX(100%);
+              opacity: 1;
+          }
+      }
+
+      &.active2 {
+          transform: translateX(200%);
+          opacity: 0;
+          pointer-events: none;
+          @media (min-width: $md) {
+              pointer-events: all;
+              transform: translateX(200%);
+              opacity: 1;
+          }
+      }
+
+      &.active3 {
+          transform: translateX(200%);
+          opacity: 0;
+          pointer-events: none;
+          @media (min-width: $md) {
+              transform: translateX(300%);
+          }
+          @media (min-width: $lg) {
+              pointer-events: all;
+              opacity: 1;
+          }
+      }
+
+      &.active4 {
+          opacity: 0;
+          pointer-events: none;
+          @media (min-width: $lg) {
+              pointer-events: all;
+              transform: translateX(400%);
+          }
+      }
+        
+      &.active-out-right {
+            opacity: 0;
+            transform: translateX(500%);
+        }
+  }
+
+  .item-on-1 {
+     width: 100%;
+    }
+
+    .item-on-2 {
+        width: 50%;
+    }
+
+    .item-on-3 {
+        width: 33.3%;
+    }
+
+    .item-on-4 {
+        width: 25%;
+    }
+
+
+  .nav-wrapper {
+      button {
+          position: absolute;
+          top: 50%;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          transition: all 500ms;
+          opacity: 1;
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-image: url('../images/arrow.png');
+          background-size: 12.5px 21.2px;
+          background-repeat: no-repeat;
+          background-position: center;
+          @include image-2x('../images/arrow@2x.png', 17.2px 29.5px);
+          @include image-3x('../images/arrow@3x.png', 17.2px 29.5px);
+
+          &:focus {
+              border: none;
+              outline: none;
+          }
+          &:active {
+              border: none;
+              outline: none;
+          }
+
+          &:focus {
+              transition: all 500ms;
+              opacity: .7;
+          }
+
+          &.nav-left {
+              left: 0;
+              
+              transform: translateY(-50%) rotate(180deg);
+          }
+
+          &.nav-right {
+              right: 0;
+              transform: translateY(-50%);
+          }
+      }
+  }
+
+  .bullets-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 16px auto;
+      width: 100%;
+      max-width: 480px;
+
+      li {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border: 1px solid black;
+          cursor: pointer;
+          transition: all 500ms;
+
+          &.active {
+              transition: all 500ms;
+              background-color: black;
+          }
+      }
+
+  }
+}

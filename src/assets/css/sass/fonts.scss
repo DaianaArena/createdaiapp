@@ -1,0 +1,187 @@
+// FONT TYPE DEFINITIONS
+
+@font-face {
+    font-family: 'IntelOne Display';
+    src: url('../fonts/intelone-display-regular.eot');
+    src: url('../fonts/intelone-display-regular.woff') format('woff'),
+        url('../fonts/intelone-display-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'IntelOne Display';
+//     src: url('../fonts/intelone-display-medium.eot');
+//     src: url('../fonts/intelone-display-medium.woff') format('woff'),
+//         url('../fonts/intelone-display-medium.otf') format('opentype');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'IntelOne Display';
+//     src: url('../fonts/intelone-display-light.eot');
+//     src: url('../fonts/intelone-display-light.woff') format('woff'),
+//         url('../fonts/intelone-display-light.otf') format('opentype');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'IntelOne Display';
+//     src: url('../fonts/intelone-display-bold.eot');
+//     src: url('../fonts/intelone-display-bold.woff') format('woff'),
+//         url('../fonts/intelone-display-bold.otf') format('opentype');
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+// @font-face {
+//     font-family: 'Intel Clear Pro';
+//     src: url('../fonts/intel-clear-pro.eot');
+//     src: url('../fonts/intel-clear-pro.woff') format('woff'),
+//         url('../fonts/intel-clear-pro.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear.eot');
+//     src: url('../fonts/intel-clear.woff') format('woff'),
+//         url('../fonts/intel-clear.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear-bold.eot');
+//     src: url('../fonts/intel-clear-bold.woff') format('woff'),
+//         url('../fonts/intel-clear-bold.ttf') format('truetype');
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear-italic.eot');
+//     src: url('../fonts/intel-clear-italic.woff') format('woff'),
+//         url('../fonts/intel-clear-italic.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear-light.eot');
+//     src: url('../fonts/intel-clear-light.woff') format('woff'),
+//         url('../fonts/intel-clear-light.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear-bold-italic.eot');
+//     src: url('../fonts/intel-clear-bold-italic.woff') format('woff'),
+//         url('../fonts/intel-clear-bold-italic.ttf') format('truetype');
+//     font-weight: 700;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Intel Clear';
+//     src: url('../fonts/intel-clear-light-italic.eot');
+//     src: url('../fonts/intel-clear-light-italic.woff') format('woff'),
+//         url('../fonts/intel-clear-light-italic.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-regular.woff') format('woff'),
+        url('../fonts/intelone-text-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-italic.woff') format('woff'),
+        url('../fonts/intelone-text-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-bold.woff') format('woff'),
+        url('../fonts/intelone-text-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-bolditalic.woff') format('woff'),
+        url('../fonts/intelone-text-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-medium.woff') format('woff'),
+        url('../fonts/intelone-text-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-mediumitalic.woff') format('woff'),
+        url('../fonts/intelone-text-mediumitalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-light.woff') format('woff'),
+        url('../fonts/intelone-text-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IntelOne Text';
+    src: url('../fonts/intelone-text-lightitalic.woff') format('woff'),
+        url('../fonts/intelone-text-lightitalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}

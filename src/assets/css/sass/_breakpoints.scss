@@ -1,0 +1,59 @@
+/* Media Queries Mixin
+**********************/
+
+@mixin media($breakpoint) {
+    @if $breakpoint==mobile-landscape {
+        @media only screen and (min-width: $xs) {
+            @content;
+        }
+    } @else if $breakpoint==tablet {
+        @media only screen and (min-width: $sm) {
+            @content;
+        }
+    } @else if $breakpoint==tablet-2 {
+        @media only screen and (min-width: $sm2) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-s {
+        @media only screen and (min-width: $md) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-s2 {
+        @media only screen and (min-width: $md2) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-m {
+        @media only screen and (min-width: $lg) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-l {
+        @media only screen and (min-width: $xlg) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-xl {
+        @media only screen and (min-width: $xlg2) {
+            @content;
+        }
+    } @else if $breakpoint==mobile-only {
+        @media only screen and (max-width: $mobileMax) {
+            @content;
+        }
+    } @else if $breakpoint==tablet-p-only {
+        @media only screen and (min-width: $sm) and (max-width: $md) and (orientation: portrait) {
+            @content;
+        }
+    } @else if $breakpoint==tablet-l-only {
+        @media only screen and (min-width: $sm) and (max-width: $md) and (orientation: landscape) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-s-only {
+        @media only screen and (min-width: $sm) and (max-width: desktopMax) {
+            @content;
+        }
+    } @else if $breakpoint==desktop-m-only {
+        @media only screen and (min-width: $lg) and (max-width: $xlg) {
+            @content;
+        }
+    }
+}
+  

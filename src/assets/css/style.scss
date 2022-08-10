@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import 'sass/fonts';
+@import 'sass/variables';
+
+#site-wrapper {
+    @import 'sass/reset';
+}
+
+#site-wrapper {
+    position: relative;
+    z-index: 1;
+    min-width: $mobileMin;
+    max-width: $desktopMax;
+    margin: 0 auto;
+    font-family: $fuente-principal;
+    font-size: $fontSizeBase;
+    line-height: $lineHeightBase;
+    font-weight: 400;
+    background-color: $color-blanco;
+    color: $color-negro;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}//.main-wrapper
+
+
+#site-wrapper {
+    @import 'sass/breakpoints';
+    @import 'sass/mixins';
+    @import 'sass/helpers';
+    @import 'sass/animations';
+    @import 'sass/header';
+    @import 'sass/main';
+    @import 'sass/footer';
+}
