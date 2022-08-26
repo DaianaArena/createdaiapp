@@ -39,5 +39,9 @@
   "license": "ISC",
   "bin": {
     "createDaiApp": "bin/index.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.5.1"
   }
 }
